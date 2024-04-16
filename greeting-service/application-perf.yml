@@ -1,0 +1,14 @@
+---
+spring:
+  application:
+    name: greeting-service
+greeting-service:
+    greeting: "Olá"
+    default-value: "mundo perf"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8888
